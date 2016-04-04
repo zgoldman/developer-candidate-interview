@@ -26,10 +26,12 @@ You'll find the input files in the `schedule` directory. Please use that directo
 The `input.csv` and `instructor_availability.csv` files refer to two different types of lessons: _Group Lesson_ and _Private Lesson_. Refer to the rules below for each lesson type.
 
 **Group Lesson**
+
 Group lessons have a duration and are **only** allowed to be scheduled in **single blocks** (e.g. you cannot schedule a 1-hour group lesson for 2 hours, which would be considered 2 blocks of time). Each instructor has a maximum participant restriction, after which the group lesson should be considered not available.
 
 
 **Private Lesson**
+
 Private lessons have a duration and are allowed to be scheduled in multiple blocks at one time (e.g. a 1/2 hour lesson duration can be scheduled by the same person for 2 hours, comprising 4 blocks of time).
 
 #### Notes on Input Files
