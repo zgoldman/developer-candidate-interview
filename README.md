@@ -8,21 +8,40 @@ Write a Ruby program that takes a string as input and determines whether or not 
 ## Part II
 You may have been able to search for solutions to Part I of this exercise, but this part is a little more "real world." It will require you to think about the design and implementation of a real problem that we're solving at Upper Hand. The Sports Management domain is very fractured, but one part of almost any application you find in our universe is scheduling events (both single and recurring).
 
-Your task is to write a **small** web application that allows parents to schedule recurring lessons with their kids' coaches, and allows organization administrators to schedule multi-day camps with their athletes. *Please don't be concerned about security for this application (no Devise, Sorcery, etc. is needed).* You are welcome to use any number of gems to aid in your implementation. You're welcome to use any Ruby web framework, or even a custom Rack app --- the only requirement is that we ought to be able to run your application locally and see it in action (so, if there are specific instructions for doing so, please let us know).
+You may use your language of choice for this part of the exercise. Your task is to write a script that will test for schedule conflicts as users attempt to schedule lessons with instructors. Each line of the `input.csv` file can be thought of as a single API request for scheduling a lesson. You should process this file in order, assuming that each line comes into our application sequentially.
 
-Some questions you may ask yourself (and will need to answer yourself):
-- do users have a single role, or can they have multiple roles
-- do you create and store recurring events all at once, or do you store metadata about events and "calculate" occurrences as needed
-- how do you deal with conflicts (e.g. two athletes can't have a private lesson with the same coach at the same time)
- 
-We're purposefully not putting a lot of constraints on this part of the interview exercise, because we want to see what you come up with. But, if you have burning questions which you feel you can't answer yourself, please contact us. You shouldn't need to spend more than 10 hours on this, but if you're really driven to do so, feel free ... just be mindful of how much time it will take for us to review it.
+There are several types of conflicts that could occur. For example, a user may try to schedule a lesson during the same time he or she has another lesson (_student not available_). Or, a user may try to schedule a lesson during a time that the instructor is not available (_instructor not available_). Your script should output the conflicts in the schedule in the following format (if you cannot discern the reason for the conflict, you should output _other_):
 
-Please use the `web-app` directory for this part of the exercise.
+    <blank line>
+    Student Name: ...
+    Attempted Instructor: ...
+    Attempted Schedule: ...
+    Reason for Conflict: [instructor not available|student not available|other]
+    <blank line>
+
+You'll find the input files in the `schedule` directory. Please use that directory to house the code for this part of the exercise.
+
+#### Notes on Training Types
+
+The `input.csv` and `instructor_availability.csv` files refer to two different types of lessons: _Group Lesson_ and _Private Lesson_. Refer to the rules below for each lesson type.
+
+**Group Lesson**
+Group lessons have a duration and are **only** allowed to be scheduled in **single blocks** (e.g. you cannot schedule a 1-hour group lesson for 2 hours, which would be considered 2 blocks of time). Each instructor has a maximum participant restriction, after which the group lesson should be considered not available.
+
+
+**Private Lesson**
+Private lessons have a duration and are allowed to be scheduled in multiple blocks at one time (e.g. a 1/2 hour lesson duration can be scheduled by the same person for 2 hours, comprising 4 blocks of time).
+
+#### Notes on Input Files
+
+- Instructors are referenced by name in the `With` column of the `input.csv` file and are not case-sensitive.
+- Both CSV files have 4 columns dealing with the time of lessons: Start Date and End Date, and Start Time and End Time. The _Date_ columns represent the valid days on which lessons can occur, while the _Time_ columns represent valid time ranges within those dates. For purposes of this exercise, any day of the week is considered valid within those date ranges (Sunday through Saturday).
 
 ## Process Details
 1. Fork this repository and create a PR against it for your final work, so that we can review it.
 2. In your PR or in the code, please include some comments about why you did certain things. For example,
-  1. What drove you to create the classes you did?
+  1. What drove you to create the classes you did (if any)?
   2. How did you decide the behaviors of your objects?
-  3. If you employed a pattern of some type why did you do it?
-  4. If you think you have an algorithm or choice of data structure that needs explanation please do so.
+  3. If you employed a pattern of some type why drove you to that decision?
+  4. If you think you have an algorithm, or choice of data structure, that needs explanation please add some comments.
+3. For the second part, please include instructions for running your script, especially if there are dependencies (e.g. `pip install ...`, `gem install ...`, `mvn ...`).
