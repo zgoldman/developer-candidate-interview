@@ -14,8 +14,10 @@ There are several types of conflicts that could occur. For example, a user may t
 
     <blank line>
     Request ID: ...
-    Reason for Conflict: [instructor not available|student not available|other]
+    Reason for Conflict: [student not available|instructor not available|other]
     <blank line>
+
+If there are multiple reasons for conflict please write them all out separated by a comma (e.g. "Reason for Conflict: student not available,instructor not available")
 
 You'll find the input files in the `schedule` directory. Please use that directory to house the code for this part of the exercise.
 

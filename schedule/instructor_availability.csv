@@ -1,5 +1,5 @@
 Name,Training Type,Max Participants,Start Date,End Date,Start Time,End Time,Duration
-Joe Schmoe,Group Lesson,10,2016-01-04,2016-04-01,12:00:00 +0400,17:00:00 +0400,1 hour
-Joe Schmoe,Private Lesson,1,2016-01-04,2016-04-01,08:00:00 +0400,11:00:00 +0400,1 hour
-Jane Doe,Private Lesson,1,2016-01-04,2016-07-31,08:00:00 +0400,11:00:00 +0400,1/2 hour
-Jane Doe,Group Lesson,3,2016-01-04,2016-07-31,08:00:00 +0400,11:00:00 +0400,45 minutes
+Joe Schmoe,Group Lesson,10,2016-01-04,2016-04-01,12:00:00 EST,17:00:00 EST,1 hour
+Joe Schmoe,Private Lesson,1,2016-01-04,2016-04-01,08:00:00 EST,11:00:00 EST,1 hour
+Jane Doe,Private Lesson,1,2016-01-04,2016-07-31,08:00:00 EST,11:00:00 EST,1/2 hour
+Jane Doe,Group Lesson,3,2016-01-04,2016-07-31,08:00:00 EST,11:00:00 EST,45 minutes

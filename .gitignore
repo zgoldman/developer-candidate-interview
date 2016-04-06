@@ -1,1 +1,3 @@
 schedule/.input.csv
+schedule/answer_key.rb
+schedule/test_candidates/**
