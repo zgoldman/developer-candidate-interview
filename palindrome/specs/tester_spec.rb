@@ -5,17 +5,17 @@ RSpec.describe Tester do
   [Tester::T1, Tester::T2].each do |clz|
     context 'words' do
       it 'should be a palindrome' do
-        expect(clz.new.palindrome?('abcdefedcba')).to be_true
+        expect(clz.new.palindrome?('abcdefedcba')).to be true
       end
 
       it 'should not be a palindrome' do
-        expect(clz.new.palindrome?('hbcdefedcbg')).to be_false
+        expect(clz.new.palindrome?('hbcdefedcbg')).to be false
       end
     end
 
     context 'phrases' do
       it 'should be a palindrome' do
-        expect(clz.new.palindrome?('A man, a plan, a canal, Panama!!')).to be_true
+        expect(clz.new.palindrome?('A man, a plan, a canal, Panama!!')).to be true
       end
 
       it 'should not be a palindrome' do
@@ -30,21 +30,21 @@ RSpec.describe Tester do
 
           Call my parents? No, no... I don't think that's necessary. They're already
           mad at me for not making Fido eat some brocolli with it!
-        })).to be_false
+        })).to be false
       end
     end
 
     context 'edge cases' do
       it 'should handle nil strings' do
-        expect(clz.new.palindrome?(nil)).to be_false
+        expect(clz.new.palindrome?(nil)).to be false
       end
 
       it 'should handle empty strings' do
-        expect(clz.new.palindrome?('')).to be_false
+        expect(clz.new.palindrome?('')).to be false
       end
 
       it 'should handle non-strings' do
-        expect(clz.new.palindrome?(100)).to be_false
+        expect(clz.new.palindrome?(100)).to be false
       end
     end
   end

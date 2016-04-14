@@ -1,0 +1,5 @@
+require 'schedule_zg/booking'
+require 'schedule_zg/exec'
+require 'schedule_zg/lesson'
+require 'schedule_zg/scheduler'
+require 'schedule_zg/schedule_request'

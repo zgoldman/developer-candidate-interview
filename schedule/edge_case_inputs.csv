@@ -1,0 +1,22 @@
+Request ID,Name,Training Type,Start Date,Start Time,End Date,End Time,With
+1,Double Block Guy,Group Lesson,2016-01-04,15:00:00 EST,2016-02-26,17:00:00 EST,Joe Schmoe
+2,Fractional Block Guy,Private Lesson,2016-01-04,8:00:00 EST,2016-02-26,9:30:00 EST,Joe Schmoe
+3,Double Book Guy,Group Lesson,2016-01-04,15:00:00 EST,2016-02-26,16:00:00 EST,Joe Schmoe
+4,Double Book Guy,Group Lesson,2016-01-04,15:00:00 EST,2016-02-26,16:00:00 EST,Joe Schmoe
+5,Overlapping Time Guy,Group Lesson,2016-01-04,14:30:00 EST,2016-02-26,15:30:00 EST,Joe Schmoe
+6,EarlyLesson 1,Group Lesson,2016-01-04,8:00:00 EST,2016-02-26,8:45:00 EST,Jane Doe
+7,EarlyLesson 2,Group Lesson,2016-01-04,8:00:00 EST,2016-02-26,8:45:00 EST,Jane Doe
+8,EarlyLesson 3,Group Lesson,2016-01-04,8:00:00 EST,2016-02-26,8:45:00 EST,Jane Doe
+9,EarlyLesson 4,Group Lesson,2016-01-04,8:00:00 EST,2016-02-26,8:45:00 EST,Jane Doe
+10,LateLesson 1,Group Lesson,2016-01-04,8:45:00 EST,2016-02-26,9:30:00 EST,Jane Doe
+11,LateLesson 2,Group Lesson,2016-01-04,8:45:00 EST,2016-02-26,9:30:00 EST,Jane Doe
+12,LateLesson 3,Group Lesson,2016-01-04,8:45:00 EST,2016-02-26,9:30:00 EST,Jane Doe
+13,LateLesson 4,Group Lesson,2016-01-04,8:45:00 EST,2016-02-26,9:30:00 EST,Jane Doe
+14,BothLesson,Group Lesson,2016-01-04,8:00:00 EST,2016-02-26,9:30:00 EST,Jane Doe
+15,SingleBlock FractionTime,Private Lesson,2016-02-27,8:00:00 EST,2016-02-29,8:30:00 EST,Jane Doe
+16,Other Timezone,Private Lesson,2016-03-04,7:00:00 CST,2016-04-26,7:30:00 CST,Jane Doe
+17,Double Block Private Lesson,Private Lesson,2016-05-01,8:00:00 EST,2016-05-02,9:00:00 EST,Jane Doe
+18,Overlapping Private Lesson,Private Lesson,2016-05-01,8:00:00 EST,2016-05-02,8:30:00 EST,Jane Doe
+19,JD Private 1,Private Lesson,2016-01-04,10:00:00 EST,2016-01-05,10:30:00 EST,Jane Doe
+20,Instructor and Student not available,Private Lesson,2016-01-04,10:00:00 EST,2016-01-05,11:00:00 EST,Joe Schmoe
+21,Instructor and Student not available,Private Lesson,2016-01-04,10:00:00 EST,2016-01-05,10:30:00 EST,Jane Doe
